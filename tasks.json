@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Sync with GitHub",
+            "type": "shell",
+            "command": "git pull origin master",
+            "problemMatcher": []
+        }
+    ]
+}
