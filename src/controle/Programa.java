@@ -1,8 +1,6 @@
-import java.util.ArrayList; oi
+import java.util.ArrayList;
 
-import dominio.Fase;
-
-// Classe representando um personagem
+// Classe representando um personagem do sistema solar
 class Personagem {
     private String nome;
     
@@ -15,11 +13,11 @@ class Personagem {
     }
 }
 
-// Classe representando uma fase
-class Fase {
+// Classe representando uma fase do sistema solar
+class Satelite {
     private String nome;
     
-    public Fase(String nome) {
+    public Satelite(String nome) {
         this.nome = nome;
     }
     
@@ -28,19 +26,24 @@ class Fase {
     }
 }
 
-// Classe representando um mundo
-class Mundo {
+// Classe representando um mundo do sistema solar
+class Planeta {
     private String nome;
-    private ArrayList<Fase> fases;
+    private ArrayList<Satelite> satelites;
     
-    public Mundo(String nome) {
+    public Planeta(String nome) {
         this.nome = nome;
-        fases = new ArrayList<>();
+        satelites = new ArrayList<>();
     }
     
-    public void addFase(Fase fase) {
-        fases.add(fase);
+    public void addSatelite(Satelite satelite) {
+        satelites.add(satelite);
     }
+    
+    public ArrayList<Satelite> getSatelites() {
+        return satelites;
+    }
+}
     
     public ArrayList<Fase> getFases() {
         return fases;

@@ -1,42 +1,39 @@
-public class JogoSonicRPG {
+public class JogoSistemaSolar {
     public static void main(String[] args) {
         // Criando personagens
-        Personagem sonic = new Personagem("Sonic");
-        Personagem tails = new Personagem("Tails");
-        Personagem knuckles = new Personagem("Knuckles");
-        Personagem amy = new Personagem("Amy");
+        Personagem mercurio = new Personagem("Mercúrio");
+        Personagem venus = new Personagem("Vênus");
+        Personagem terra = new Personagem("Terra");
+        Personagem marte = new Personagem("Marte");
+        Personagem jupiter = new Personagem("Júpiter");
+        Personagem saturno = new Personagem("Saturno");
+        Personagem urano = new Personagem("Urano");
+        Personagem netuno = new Personagem("Netuno");
         
-        // Criando mundos
-        Mundo greenHillZone = new Mundo("Green Hill Zone");
-        Mundo chemicalPlantZone = new Mundo("Chemical Plant Zone");
-        Mundo stardustSpeedway = new Mundo("Stardust Speedway");
-        Mundo lavaReefZone = new Mundo("Lava Reef Zone");
-        Mundo finalZone = new Mundo("Final Zone");
+        // Criando planetas
+        Planeta mercurioPlaneta = new Planeta("Mercúrio");
+        Planeta venusPlaneta = new Planeta("Vênus");
+        Planeta terraPlaneta = new Planeta("Terra");
+        Planeta martePlaneta = new Planeta("Marte");
+        Planeta jupiterPlaneta = new Planeta("Júpiter");
+        Planeta saturnoPlaneta = new Planeta("Saturno");
+        Planeta uranoPlaneta = new Planeta("Urano");
+        Planeta netunoPlaneta = new Planeta("Netuno");
         
-        // Adicionando fases aos mundos
-        greenHillZone.addFase(new Fase("Act 1"));
-        greenHillZone.addFase(new Fase("Act 2"));
-        greenHillZone.addFase(new Fase("Boss"));
-        
-        chemicalPlantZone.addFase(new Fase("Act 1"));
-        chemicalPlantZone.addFase(new Fase("Act 2"));
-        chemicalPlantZone.addFase(new Fase("Boss"));
-        
-        stardustSpeedway.addFase(new Fase("Act 1"));
-        stardustSpeedway.addFase(new Fase("Act 2"));
-        stardustSpeedway.addFase(new Fase("Boss"));
-        
-        lavaReefZone.addFase(new Fase("Act 1"));
-        lavaReefZone.addFase(new Fase("Act 2"));
-        lavaReefZone.addFase(new Fase("Boss"));
-        
-        finalZone.addFase(new Fase("Act 1"));
-        finalZone.addFase(new Fase("Act 2"));
-        finalZone.addFase(new Fase("Boss"));
+        // Adicionando luas aos planetas
+        terraPlaneta.addLua(new Lua("Lua"));
+        jupiterPlaneta.addLua(new Lua("Io"));
+        jupiterPlaneta.addLua(new Lua("Europa"));
+        jupiterPlaneta.addLua(new Lua("Ganimedes"));
+        jupiterPlaneta.addLua(new Lua("Calisto"));
+        saturnoPlaneta.addLua(new Lua("Titã"));
+        saturnoPlaneta.addLua(new Lua("Reia"));
+        saturnoPlaneta.addLua(new Lua("Tétis"));
+        saturnoPlaneta.addLua(new Lua("Dione"));
+        saturnoPlaneta.addLua(new Lua("Encélado"));
         
         // Exibindo informações do jogo
-        System.out.println("Bem-vindo ao Jogo Sonic RPG!");
-        System.out.println("Personagens disponíveis: " + sonic.getNome() + ", " + tails.getNome() + ", " + knuckles.getNome() + ", " + amy.getNome());
-        System.out.println("Mundos disponíveis: " + greenHillZone.getNome() + ", " + chemicalPlantZone.getNome() + ", " + stardustSpeedway.getNome() + ", " + lavaReefZone.getNome() + ", " + finalZone.getNome());
+        System.out.println("Bem-vindo ao Jogo Sistema Solar!");
+        System.out.println("Personagens disponíveis: " + sol.getNome() + ", " + mercurio.getNome() + ", " + venus.getNome() + ", " + terra.getNome() + ", " + marte.getNome() + ", " + jupiter.getNome() + ", " + saturno.getNome() + ", " + urano.getNome() + ", " + netuno.getNome());
+        System.out.println("Planetas disponíveis: " + mercurioPlaneta.getNome() + ", " + venusPlaneta.getNome() + ", " + terraPlaneta.getNome() + ", " + martePlaneta.getNome() + ", " + jupiterPlaneta.getNome() + ", " + saturnoPlaneta.getNome() + ", " + uranoPlaneta.getNome() + ", " + netunoPlaneta.getNome());
     }
-}
